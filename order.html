@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order here</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(side-dish.jpg);
+            background-repeat: no-repeat;
+            background-position: relative;
+            background-size: cover;
+        }
+        .logo {
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.sidelist{
+   display: flex;
+   color: white;
+   padding: 15px;
+   gap:1rem; 
+}
+.sidelist a{
+    text-decoration: none;
+    color:whitesmoke ;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+form{
+    height: 470px;
+    width: 200px;
+    background-color:rgba(255, 255, 255, 0.651);
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.3s transform;
+    box-shadow: 8px 8px white;
+}
+/* form:hover{
+    transform: translate(100px,0);
+} */
+input{
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+.btn{
+    padding: 6px;
+    outline: none;
+    border: 0;
+    border-radius: 6px;
+    font-size: 17px;
+    background-color:white;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.623);
+}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.jpg" alt="image here">
+    <div class="sidelist">
+            <a href="index.html">HOME</a>
+            <a href="About.html">ABOUT US</a>
+            <a href="order.html">ORDER</a>
+            <a href="our food.html">OUR FOOD</a>
+    </div>
+    </div>
+    <div class="form">
+        <form action="">
+            <h3>Ordering Form</h3>
+            <h4>First Name
+                <input type="text" >
+            </h4>
+            <h4>Last Name
+                <input type="text" >
+            </h4>
+            <h4>Mobile Number
+                <input type="number" >
+            </h4>
+            <h4>Email
+                <input type="email">
+            </h4>
+            <h4>Food
+                <input type="text" >
+            </h4>
+            <h4>Payment method
+                <input type="text" >
+            </h4>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>

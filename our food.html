@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order here</title>
+    <style>
+        body{margin: 0;
+            background-image:linear-gradient(90deg,#FFFDD0,#8B4513);
+        }
+        .logo {
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+        }
+        .sidelist{
+        display: flex;
+        color: white;
+        padding: 15px;
+        gap:1rem; 
+        }
+        .sidelist a{
+            text-decoration: none;
+            color:#f7f6e8 ;
+        }
+        .pastry-list{
+            margin: 150px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 5px;
+            color: #8B4513;
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px; */
+        }
+        li{
+           transition: 0.3s ease;
+        }
+        li:hover{
+            transform: scale(1.04);
+        }
+        
+        .list1{
+            height: 300px;
+            width: 200px;
+            background-color: rgba(255, 255, 255, 0.068);
+            text-align: center;
+            list-style: none;
+            border-radius: 20px;
+            padding-top: 10px;
+            font-size: 17px;
+            box-shadow: 5px 5px rgb(0,0,0,0.1) ;
+            transition: 0.3s ;
+        }
+        
+        .list2{
+            box-shadow: 5px 5px rgb(0,0,0,0.1) ;
+            height: 300px;
+            width: 200px;
+            background-color:rgba(255, 255, 255, 0.068) ;
+            text-align: center;
+            list-style: none;
+            border-radius: 20px;
+            padding-top: 10px;
+            font-size: 17px;
+            
+        }
+        .list3{
+            box-shadow: 5px 5px rgb(0,0,0,0.1) ;
+            height: 300px;
+            width: 200px;
+            background-color:rgba(255, 255, 255, 0.068) ;
+            text-align: center;
+            list-style: none;
+            border-radius: 20px;
+            padding-top: 10px;
+            font-size: 17px;
+            
+        }
+        .list4{
+            box-shadow: 5px 5px rgb(0,0,0,0.1) ;
+            height: 300px;
+            width: 200px;
+            background-color:rgba(255, 255, 255, 0.068) ;
+            text-align: center;
+            list-style: none;
+            border-radius: 20px;
+            padding-top: 10px;
+            font-size: 17px;
+        }
+        p{
+            font-size: 24px;
+        }
+        .dropdown { 
+            display: none;
+            font-size: 20px;
+            z-index: 1;}
+        .dropdown a{
+            text-decoration: none;
+            color: rgb(219, 114, 114);
+        }
+        .drop{position: relative;
+            display: inline-block;}
+        .show{display: block;}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.jpg" alt="image here">
+    <div class="sidelist">
+            <a href="index.html">HOME</a>
+            <a href="order.html">ORDER</a>
+            <a href="our food.html">OUR FOOD</a>
+    </div>
+    </div>
+    <div class="pastry-list">
+            <div class="list1">
+                <p>CHIPS AND NUTS</p>
+                <div class="drop">
+                <li onclick="myfunction()">FRIED CHIPS</li><br>
+                    <div id="mydropdown" class="dropdown"><a href="order.html">ORDER</a></div>
+                </div>
+                <li>BAKED CHIPS</li><br>
+                <li>PLANTAIN CHIPS</li><br>
+                <li>COATED NUTS</li><br>
+                <li>DONUTS</li><br>
+            </div>
+            <div class="list2">
+                <p>CAKES</p>
+                <li>CHOCOLATE CAKE</li><br>
+                <li>VANILLA CAKE</li><br>
+                <li>FRUIT CAKE</li><br>
+                <li>SPONGE CAKE</li><br>
+                <li>CUP CAKE</li><br>
+            </div>
+            <div class="list3">
+                <p>LOCAL DRINKS</p>
+                <li>SOBOLO</li><br>
+                <li>ASANA</li><br>
+                <li>LAMUGIN</li><br>
+                <li>APPLE JUICE</li><br>
+                <li>PINEAPPLE JUICE</li><br>
+            </div>
+            <div class="list4">
+                <p>FOOD</p>
+                <li>JOLLOF RICE </li><br>
+                <li>FRIED RICE </li><br>
+                <li>VEGETABLE RICE</li><br>
+                <li>YAM CHIPS</li><br>
+                <li>APPESIE</li><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script >
+        function myfunction(){
+            document.getElementById("mydropdown").classList.toggle("show" );
+            }
+    </script>
+</body>
+</html>
