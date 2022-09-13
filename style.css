@@ -20,8 +20,9 @@ body{
 
 .nav {
     display: flex;
-    justify-content: space-around;
-    background-color:rgba(236, 236, 241, 0.705) ;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    background-color:rgba(236, 236, 241, 0.861) ;
     
 }
 .nav-links{
