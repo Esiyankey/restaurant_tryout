@@ -112,5 +112,14 @@ font-size: 20px;
 }
 .third-section{
     display:flex;
-    
+    justify-content: space-between ;
+    margin-top: 20px;
+    padding: 4rem;
+}
+ul{
+    display: flex;
+   flex-direction: row;
+    list-style:none;
+    align-items: center;
+    gap: 1rem;
 }
