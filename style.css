@@ -77,7 +77,7 @@ section{
     justify-content: space-around;
     align-items: center;
     /* margin-top: 90px; */
-   background-color: rgba(225, 222, 222, 0.472);
+   /* background-color: rgba(225, 222, 222, 0.472); */
     padding: 50px;
 }
 
@@ -168,11 +168,14 @@ li a{
     width: 150px;
     border-radius: 5px;
     background-color: white;
-    box-shadow: ;
+    
 }
 .cards{
     height: 140px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+.lunch{
+    color: #f83d14;
 }
